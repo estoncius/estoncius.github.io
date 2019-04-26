@@ -1,0 +1,185 @@
+<!DOCTYPE html >
+<html lang="en">
+	<head>
+			
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+			<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+			<link rel="stylesheet" href="style.css">
+            <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+            <script>
+                $.get("http://localhost:3000/perm/" , function(data, status){
+                var a = document.getElementById("titl");
+                a.innerHTML = data;
+                });
+                $.get("http://localhost:3000/defn/" , function(data, status){
+                var b = document.getElementById("descr");
+                b.innerHTML = data;
+                });
+                $.get("http://localhost:3000/nufn/" , function(data, status){
+                var c = document.getElementById("point");
+                c.innerHTML = data;
+                });
+            </script>
+	</head>
+	<body>
+		<!-- MENU START-->
+			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+					<a class="navbar-brand" href="#">
+						<img src="images/EaseUp.png" href="index.html" width="100" height="100" alt="">
+						<h2 id="ease-up">EaseUp</h2>
+					</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					  <span class="navbar-toggler-icon"></span>
+					</button>
+				  
+					<div class="collapse navbar-collapse"  id="navbarSupportedContent">
+					  <ul class="navbar-nav mr-auto nav">
+						<li class="nav-item active ">
+						  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item ">
+						  <a class="nav-link" href="rewards.html">Rewards</a>
+						</li>
+						<li class="nav-item dropdown">
+						  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							About
+						  </a>
+						  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="About.html">Our Mission</a>
+							<a class="dropdown-item" href="#">Team</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="#">Donate</a>
+						  </div>
+						</li>
+						
+					  </ul>
+					  <form class="form-inline my-2 my-lg-0" id="points-form">
+							<a class="nav-link Disabled" href="#" tabindex="-1" aria-disabled="true" id="points-text">Your Points:<h2 id="pointse">0</h2></a>
+					  </form>
+					</div>
+				  </nav>
+				
+				<!-- MENU END-->
+
+				<!-- Upload Button START-->
+				<div id="job-upload" class="text-left">
+				<a href="Job.html"><button type="button" class="btn btn-success" id="butonis">Upload a Job</button></a>
+				</div>
+				<!-- Upload Button END-->
+
+
+					
+				
+				<!-- JOB CARDS START-->
+				<div class="container"> <!-- FIRST CONTAINER START-->
+				
+				<div class="card" style="width: 18rem;">
+						<img src="images/plants.jpg" class="card-img-top" id="foto" alt="...">
+						<div class="card-body">
+						  <h5 class="card-title" id="titl">Card title</h5>
+						  <p class="card-text" id="descr">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+						  <a href="#" class="btn btn-primary" id="point" onclick="clickPoint()">5 points</a>
+						</div>
+				</div>
+			
+
+				<div class="card" style="width: 18rem;">
+						<img src="images/plants.jpg" class="card-img-top" alt="...">
+						<div class="card-body">
+						  <h5 class="card-title">Card title</h5>
+						  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+						  <a href="#" class="btn btn-primary">5 points</a>
+						</div>
+						
+				</div>
+
+				<div class="card" style="width: 18rem;">
+						<img src="images/plants.jpg" class="card-img-top" alt="...">
+						<div class="card-body">
+						  <h5 class="card-title">Card title</h5>
+						  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+						  <a href="#" class="btn btn-primary">5 points</a>
+						</div>	
+				</div>
+
+
+				
+
+			
+				<div class="card" style="width: 18rem;">
+						<img src="images/plants.jpg" class="card-img-top" alt="...">
+						<div class="card-body">
+						  <h5 class="card-title">Card title</h5>
+						  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+						  <a href="#" class="btn btn-primary">5 points</a>
+						</div>
+				</div>
+
+
+		<!--	</div> FIRST CONTAINER ENR-->
+	
+				
+			
+
+			<!--	<div class="container">  SECOND CONTAINER START-->
+
+				<div class="card" style="width: 18rem;">
+						<img src="images/plants.jpg" class="card-img-top" alt="...">
+						<div class="card-body">
+						  <h5 class="card-title">Card title</h5>
+						  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+						  <a href="#" class="btn btn-primary">5 points</a>
+						</div>
+						
+				</div>
+				<div class="card" style="width: 18rem;">
+						<img src="images/plants.jpg" class="card-img-top" alt="...">
+						<div class="card-body">
+						  <h5 class="card-title">Card title</h5>
+						  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+						  <a href="#" class="btn btn-primary">5 points</a>
+						</div>
+						
+				</div>
+				<div class="card" style="width: 18rem;">
+						<img src="images/plants.jpg" class="card-img-top" alt="...">
+						<div class="card-body">
+						  <h5 class="card-title">Card title</h5>
+						  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+						  <a href="#" class="btn btn-primary">5 points</a>
+						</div>
+						
+				</div>
+				<div class="card" style="width: 18rem;">
+						<img src="images/plants.jpg" class="card-img-top" alt="...">
+						<div class="card-body">
+						  <h5 class="card-title">Card title</h5>
+						  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+						  <a href="#" class="btn btn-primary">5 points</a>
+						</div>
+				</div>
+
+			</div> <!-- SECOND CONTAINER END-->
+
+            <script>
+								function clickPoint(){
+                        var i = document.getElementById('pointse').innerHTML;
+                        var il = parseInt(i);
+                        var add = document.getElementById('point').innerHTML;
+                        var addl = parseInt(add);
+                        var sum = il + addl;
+                        document.getElementById('pointse').innerHTML = sum;
+                }
+                var dataImage = localStorage.getItem('imgData');
+                bannerImg = document.getElementById('foto');
+                bannerImg.src = "data:image/png;base64," + dataImage;
+            </script>
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+			<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	</body>
+</html>
